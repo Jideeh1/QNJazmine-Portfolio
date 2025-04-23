@@ -3,6 +3,10 @@
     src: url(Assets/Main.ttf);
 }
 
+* {
+    transition: all 0.3s ease-in-out;
+}
+
 body {
     background-image: url(Assets/background_layout.png);
     overflow-y: hidden;
@@ -19,12 +23,13 @@ body {
 
 nav {
     background-color: #100124;
+
 }
 
 main {
     position: relative;
     height: 80vh;
-    width: 55vw;
+    width: 65vw;
     background-image: linear-gradient(#fefefe,#dfc6f3);
     margin: 0 auto;
     box-shadow: 0px 0px 30px 0px #5908b0;
@@ -49,31 +54,47 @@ main {
 
 .navbtn {
     font-family: "main";
-    font-size: 20px;
+    font-size: clamp(10px, 1.85vw, 20px);
     background-image: linear-gradient(#9d47f9, #8525eb);
     color: #fefeff;
-    height: 4vh;
-    padding: 0px 55px;
+    height: min(4vh,6%);
+    width: clamp(10vw, 10vw, 20vw);
     border-radius: 100px;
     border: transparent;
     cursor: pointer;
     box-shadow: -5px 3px #350774;
-    transition: all 0.3s ease-in-out;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .navbtn:hover {
     opacity: 0.7;
-    transform: scale(1.1);
-    padding: 0 65px;
-    margin: 0 10px;
+    width: 15vw;
 }
 
 .sparkly{
     position: absolute;
-    left: 10px;
-    top: 10px;
+    left: 0px;
+    top: 0px;
+    margin-top: 10px;
+    margin-left: 10px;
 
     img {
-        height: 3vh;
+        height: clamp(1vh, 3vh, 2vh);
+    }
+}
+
+@media (max-width:1024px) {
+    
+    .sparkly {
+        top: 0px;
+        left: 0px;
+        margin-top: 0.65vh;
+        margin-left: 10px;
+
+    }
+
+    .navbtn {
+        font-size: clamp(10px, 1.5vw, 20px);
     }
 }
