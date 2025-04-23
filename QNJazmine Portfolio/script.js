@@ -1,0 +1,2 @@
+// Comments just in case someone snoop on my code through inspect element
+console.log("If you're here to snoop on my messy code, reconsider before your head starts hurting.\n\nSeriously tho, stop. If you just want to take some snippets or look at the whole code, it's available in my github.\n\nhttps://github.com/Jideeh1/QNJazmine-Portfolios \n\nJust don't complain when you see how messy the code is. ーｗー \n\nSincerely, Jideeh")
