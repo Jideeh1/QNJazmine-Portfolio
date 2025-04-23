@@ -80,7 +80,7 @@ main {
     margin-left: 10px;
 
     img {
-        height: clamp(1vh, 3vh, 2vh);
+        height: 3vh
     }
 }
 
@@ -92,6 +92,9 @@ main {
         margin-top: 0.65vh;
         margin-left: 10px;
 
+        img {
+            height: clamp(1vh, 3vh, 2vh);
+        }
     }
 
     .navbtn {
