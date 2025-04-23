@@ -57,7 +57,7 @@ main {
     font-size: clamp(10px, 1.85vw, 20px);
     background-image: linear-gradient(#9d47f9, #8525eb);
     color: #fefeff;
-    height: min(4vh,6%);
+    height: 4vh;
     width: clamp(10vw, 10vw, 20vw);
     border-radius: 100px;
     border: transparent;
@@ -96,5 +96,6 @@ main {
 
     .navbtn {
         font-size: clamp(10px, 1.5vw, 20px);
+        height: min(4vh,6%);
     }
 }
