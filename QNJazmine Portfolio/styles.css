@@ -11,50 +11,66 @@
     transition: all 0.3s ease-in-out;
 }
 
+
+
+
+
+
+
+
 body {
     background-image: url(Assets/background_layout.png);
     background-repeat: no-repeat;
+    background-attachment: cover;
+    background-position: center;
+    justify-content: center;
+    flex-direction: column;
     overflow-y: hidden;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+
     background-size: 100%;
     height: 100vh;
-
+    width: 100vw;
 }
 
 main {
+    
+    background-image: linear-gradient(#fefefe,#dfc6f3);
+    box-shadow: 0px 0px 30px 0px #5908b0;    
+
+    border-bottom-right-radius: 1%;    
+    border-bottom-left-radius: 1%;
+
     position: relative;
     width: auto;
-    height: 80vh;
-    padding: 0;
+
     margin: 0 auto;
-    border-bottom-left-radius: 1%;
-    border-bottom-right-radius: 1%;
-    box-shadow: 0px 0px 30px 0px #5908b0;
-    background-image: linear-gradient(#fefefe,#dfc6f3);
-    
+
 
     nav {
-        display: flex;
-        justify-content: center;
-        width: auto;
-        border-bottom-left-radius: 1%;
         border-bottom-right-radius: 1%;
+        border-bottom-left-radius: 1%;
+
         background-color: #100124;
-        gap: 15px;
         padding: 0.5% 0;
+        gap: 15px;
+
+        justify-content: center;
+        display: flex;
+        width: auto;
+
     }
 
     .credits {
         font-family: "main";
         position: absolute;
-        bottom: 15;
-        margin: 0;
-        left: 15px;
-        z-index: 2;
+
         color: #a26ad6;
-        
+        font-size: 1cqw;
+        bottom: 2%;
+        z-index: 2;
+        left: 2%;
+                
         p {
             margin: inherit;
         }
@@ -65,10 +81,12 @@ main {
 
 .sparkly{
     position: absolute;
+
+    margin-left: 10px;
+    margin-top: 10px;
+
     left: 0px;
     top: 0px;
-    margin-top: 10px;
-    margin-left: 10px;
 
     img {
         height: 3vh
@@ -77,17 +95,21 @@ main {
 
 .navbtn {
     font-family: "main";
-    border: transparent;
-    cursor: pointer;
-    text-align: center;
-    vertical-align: middle;
+
     background-image: linear-gradient(#9d47f9, #8525eb);
-    font-size: 2.5cqh;
+
+    width: clamp(10vw, 10vw, 20vw);
+    box-shadow: -5px 3px #350774;
+
+    vertical-align: middle;
+    border: transparent;
+    text-align: center;
+    cursor: pointer;
+
+    border-radius: 100px;
+    font-size: 1.25cqw;
     color: #fefeff;
     height: 4vh;
-    width: clamp(10vw, 10vw, 20vw);
-    border-radius: 100px;
-    box-shadow: -5px 3px #350774;
 
 }
 
@@ -98,58 +120,64 @@ main {
 
 .content_bg {
     position: relative;
-    width: auto;
-    height: calc(100% - 15%);
-    padding-top: 18px;
+    height: auto;
+
+    padding: 4% 0;
+    width: 60vw;
     margin: 0;
-    
     z-index: 1;
 }
 
 .website_infobox {
-    z-index: 2;
-    top: 25%;
+    box-shadow: 0px 0px 30px 0px #5908b0;
     bottom: 25%;
-    right: 5%;
     width:  50%;
     height: 50%;
-    box-shadow: 0px 0px 30px 0px #5908b0;
+    z-index: 2;
+    right: 5%;
+    top: 25%;
+
     position: absolute;
 
     .infobox {
         object-fit:fill;
-        width: 100%;
         height: 100%;
+        width: 100%;
     }
 
     .textarea {
-        display: flex;
-        position: absolute;
         transform: translate(-50%, -50%);
-        top: 50%;
+        position: absolute;
+        display: flex;
+
+        height: 100%;
+        width: 100%;
         left: 50%;
         margin: 0;
-        width: 100%;
-        height: 100%;
+        top: 50%;
+        
     
         p {
+            font-family: "Main";
+
             text-align: center;
-            color: white;
             object-fit: contain;
             width: inherit;
-            font-family: Main;
+            color: white;
+
             margin: auto 0;
-            line-height: 2.5cqh;
-            font-size: 0.85cqw;
+
+            text-shadow: 0 0 10px #b76403;
+            line-height: 1.2cqw;
             padding: 0px 1.5cqw;
             letter-spacing: 1px;
-            text-shadow: 0 0 10px #b76403;
+            font-size: 0.85cqw;
         }
     
         span {
             font-size: 1.2cqw;
-            margin: 0;
             padding: 0;
+            margin: 0;
         }
     }
 }
@@ -157,10 +185,10 @@ main {
 @media (max-width:1024px) {
     
     .sparkly {
-        top: 0px;
-        left: 0px;
         margin-top: 0.65vh;
         margin-left: 10px;
+        left: 0px;
+        top: 0px;
 
         img {
             height: clamp(1vh, 3vh, 2vh);
