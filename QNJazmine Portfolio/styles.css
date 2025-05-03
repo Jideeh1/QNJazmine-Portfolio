@@ -1,13 +1,9 @@
-@font-face {
-    font-family: "Main";
-    src: url(Assets/Main.ttf);
-}
-
 ::-webkit-scrollbar {
     display: none;
 }
 
 * {
+    font-family: "main";
     transition: all 0.3s ease-in-out;
 }
 
@@ -62,7 +58,6 @@ main {
     }
 
     .credits {
-        font-family: "main";
         position: absolute;
 
         color: #a26ad6;
@@ -94,8 +89,6 @@ main {
 }
 
 .navbtn {
-    font-family: "main";
-
     background-image: linear-gradient(#9d47f9, #8525eb);
 
     width: clamp(10vw, 10vw, 20vw);
@@ -128,6 +121,11 @@ main {
     z-index: 1;
 }
 
+.navigated {
+    opacity: 0;
+}
+
+
 .website_infobox {
     box-shadow: 0px 0px 30px 0px #5908b0;
     bottom: 25%;
@@ -158,8 +156,6 @@ main {
         
     
         p {
-            font-family: "Main";
-
             text-align: center;
             object-fit: contain;
             width: inherit;
@@ -198,5 +194,36 @@ main {
     .navbtn {
         font-size: clamp(10px, 1.5vw, 20px);
         height: min(4vh,6%);
+    }
+}
+
+.header {
+    position: absolute;
+    width: 60vw;
+    top:  7% ;
+
+    .contact_header {
+        font-family: "Main2";
+
+        -webkit-text-stroke-color: #100124;
+        -webkit-text-stroke-width: 0.15cqh;
+        text-shadow: 0px 0.2cqw #100124;
+        color: #bb8ded;
+
+        letter-spacing: -0.1cqw;
+        margin-bottom: 0;
+        font-size: 2cqw;
+
+        text-align: center;
+    }
+
+    .email {
+        text-align: center;
+        cursor: pointer;
+
+        text-decoration: underline 0.05cqw;
+
+        font-size: 1.2cqw;
+        margin: 0;
     }
 }

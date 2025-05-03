@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Main";
+    src: url(Assets/Main.ttf);
+}
+
+@font-face {
+    font-family: "Main2";
+    src: url(Assets/main2.TTF);
+}
+
+@font-face {
+    font-family: "Placeholder";
+    src: url(Assets/);
+}
