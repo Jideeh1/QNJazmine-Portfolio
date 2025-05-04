@@ -2,6 +2,11 @@
     display: none;
 }
 
+::placeholder {
+    color: #8b2af0;
+    opacity: 1;
+}
+
 * {
     font-family: "main";
     transition: all 0.3s ease-in-out;
@@ -199,7 +204,10 @@ main {
 
 .header {
     position: absolute;
+    cursor: pointer;
+    
     width: 60vw;
+    z-index: 3;
     top:  7% ;
 
     .contact_header {
@@ -219,7 +227,6 @@ main {
 
     .email {
         text-align: center;
-        cursor: pointer;
 
         text-decoration: underline 0.05cqw;
 
@@ -227,3 +234,135 @@ main {
         margin: 0;
     }
 }
+
+.contact {
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: 3;
+
+    .item {
+        font-family: "Placeholder";
+    }
+}
+
+form {
+
+    .input_box {
+        justify-content: space-around;
+        display: flex;
+
+        margin: 2cqh 0;
+        gap: 1cqw;
+
+    }
+
+    button {
+
+        background-image: linear-gradient(#9d47f9, #8525eb);
+
+        box-shadow: 0 0.5cqh #350774;
+        padding: 0.5cqw 2cqw;
+        border-radius: 500px;
+        color: #fefeff;
+        font-size:  2cqw;
+        margin: 1cqh 0;
+        right: 0;
+
+        border: transparent;
+        position: absolute;
+        cursor: pointer;
+        color: white;
+
+    }
+
+    button:hover {
+        transform: scale(1.05);
+    }
+}
+
+.input_field input {
+    border: transparent;
+
+    border-radius: 0.5cqw;
+    padding-left: 2cqw;
+    font-size: 2cqh;
+    height:  5cqh;
+    width: 20cqw;
+}
+
+
+.textarea_field {
+
+    textarea {
+        background-image:linear-gradient( #c6cefd, #a5b1fd) ;
+        -webkit-box-shadow: 0 0 2cqw 0.1cqw #10012420;
+
+        border: transparent;
+        resize: none;
+
+        border-radius: 0.5cqw;
+        padding-left: 2cqw;
+        padding-top: 1cqw;
+        font-size: 2cqh;
+        height: 20cqh;
+        width: 44cqw;
+    }
+}
+.first_field input {
+    -webkit-box-shadow: 0 0 2cqw 0.1cqw #10012420;
+    background-color: #e7e9fe;
+}
+
+.second_field input {
+    -webkit-box-shadow: 0 0 2cqw 0.1cqw #10012420;
+    background-color: #dce1ff;
+}
+
+.error_txt {
+    padding-left: 2cqw;
+    color: #d93025;
+    font-size: 1cqw;
+    margin: 1cqh 0;
+
+    text-align: left;
+    display: none;
+}
+
+.mail-container {
+    align-items: center;
+    position: absolute;
+    animation: none;
+    display: flex;
+    display: none;
+
+    left: -200px;
+    top: 40%;
+  }
+  
+  .mail {
+    height: auto;
+    width: 80px;
+    z-index: 1;
+  }
+  
+  .wing {
+    position: relative;
+    animation: none;
+    height: auto;
+
+    width: 40px;
+    z-index: 0;
+  }
+  
+  .left-wing {
+    transform-origin: right center;
+    margin-right: -10px;
+  }
+  
+  .right-wing {
+    transform-origin: left center;
+    margin-left: -10px;
+  }
