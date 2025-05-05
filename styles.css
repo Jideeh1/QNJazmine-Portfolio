@@ -1,0 +1,368 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+::placeholder {
+    color: #8b2af0;
+    opacity: 1;
+}
+
+* {
+    font-family: "main";
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+body {
+    background-image: url(Assets/background_layout.png);
+    background-repeat: no-repeat;
+    background-attachment: cover;
+    background-position: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: hidden;
+    display: flex;
+
+    background-size: 100%;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    
+    background-image: linear-gradient(#fefefe,#dfc6f3);
+    box-shadow: 0px 0px 30px 0px #5908b0;    
+
+    border-bottom-right-radius: 1%;    
+    border-bottom-left-radius: 1%;
+
+    position: relative;
+    width: auto;
+
+    margin: 0 auto;
+
+
+    nav {
+        border-bottom-right-radius: 1%;
+        border-bottom-left-radius: 1%;
+
+        background-color: #100124;
+        padding: 0.5% 0;
+        gap: 15px;
+
+        justify-content: center;
+        display: flex;
+        width: auto;
+
+    }
+
+    .credits {
+        position: absolute;
+
+        color: #a26ad6;
+        font-size: 1cqw;
+        bottom: 2%;
+        z-index: 2;
+        left: 2%;
+                
+        p {
+            margin: inherit;
+        }
+
+    }
+
+}
+
+.sparkly{
+    position: absolute;
+
+    margin-left: 10px;
+    margin-top: 10px;
+
+    left: 0px;
+    top: 0px;
+
+    img {
+        height: 3vh
+    }
+}
+
+.navbtn {
+    background-image: linear-gradient(#9d47f9, #8525eb);
+
+    width: clamp(10vw, 10vw, 20vw);
+    box-shadow: -5px 3px #350774;
+
+    vertical-align: middle;
+    border: transparent;
+    text-align: center;
+    cursor: pointer;
+
+    border-radius: 100px;
+    font-size: 1.25cqw;
+    color: #fefeff;
+    height: 4vh;
+
+}
+
+.navbtn:hover {
+    opacity: 0.7;
+    width: 15vw;
+}
+
+.content_bg {
+    position: relative;
+    height: auto;
+
+    padding: 4% 0;
+    width: 60vw;
+    margin: 0;
+    z-index: 1;
+}
+
+.navigated {
+    opacity: 0;
+}
+
+
+.website_infobox {
+    box-shadow: 0px 0px 30px 0px #5908b0;
+    bottom: 25%;
+    width:  50%;
+    height: 50%;
+    z-index: 2;
+    right: 5%;
+    top: 25%;
+
+    position: absolute;
+
+    .infobox {
+        object-fit:fill;
+        height: 100%;
+        width: 100%;
+    }
+
+    .textarea {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        display: flex;
+
+        height: 100%;
+        width: 100%;
+        left: 50%;
+        margin: 0;
+        top: 50%;
+        
+    
+        p {
+            text-align: center;
+            object-fit: contain;
+            width: inherit;
+            color: white;
+
+            margin: auto 0;
+
+            text-shadow: 0 0 10px #b76403;
+            line-height: 1.2cqw;
+            padding: 0px 1.5cqw;
+            letter-spacing: 1px;
+            font-size: 0.85cqw;
+        }
+    
+        span {
+            font-size: 1.2cqw;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    
+    .sparkly {
+        margin-top: 0.65vh;
+        margin-left: 10px;
+        left: 0px;
+        top: 0px;
+
+        img {
+            height: clamp(1vh, 3vh, 2vh);
+        }
+    }
+
+    .navbtn {
+        font-size: clamp(10px, 1.5vw, 20px);
+        height: min(4vh,6%);
+    }
+}
+
+.header {
+    position: absolute;
+    
+    width: 60vw;
+    z-index: 3;
+    top:  7% ;
+
+    .contact_header {
+        font-family: "Main2";
+
+        -webkit-text-stroke-color: #100124;
+        -webkit-text-stroke-width: 0.15cqh;
+        text-shadow: 0px 0.2cqw #100124;
+        color: #bb8ded;
+
+        letter-spacing: -0.1cqw;
+        margin-bottom: 0;
+        font-size: 2cqw;
+
+        text-align: center;
+    }
+
+    .email {
+        text-align: center;
+        cursor: pointer;
+
+        text-decoration: underline 0.05cqw;
+
+        font-size: 1.2cqw;
+        margin: 0;
+    }
+}
+
+.contact {
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: 3;
+
+    .item {
+        font-family: "Placeholder";
+    }
+}
+
+form {
+
+    .input_box {
+        justify-content: space-around;
+        display: flex;
+
+        margin: 2cqh 0;
+        gap: 1cqw;
+
+    }
+
+    button {
+
+        background-image: linear-gradient(#9d47f9, #8525eb);
+
+        box-shadow: 0 0.5cqh #350774;
+        padding: 0.5cqw 2cqw;
+        border-radius: 500px;
+        color: #fefeff;
+        font-size:  2cqw;
+        margin: 1cqh 0;
+        right: 0;
+
+        border: transparent;
+        position: absolute;
+        cursor: pointer;
+        color: white;
+
+    }
+
+    button:hover {
+        transform: scale(1.05);
+    }
+}
+
+.input_field input {
+    border: transparent;
+
+    border-radius: 0.5cqw;
+    padding-left: 2cqw;
+    font-size: 2cqh;
+    height:  5cqh;
+    width: 20cqw;
+}
+
+
+.textarea_field {
+
+    textarea {
+        background-image:linear-gradient( #c6cefd, #a5b1fd) ;
+        -webkit-box-shadow: 0 0 2cqw 0.1cqw #10012420;
+
+        border: transparent;
+        resize: none;
+
+        border-radius: 0.5cqw;
+        padding-left: 2cqw;
+        padding-top: 1cqw;
+        font-size: 2cqh;
+        height: 20cqh;
+        width: 44cqw;
+    }
+}
+.first_field input {
+    -webkit-box-shadow: 0 0 2cqw 0.1cqw #10012420;
+    background-color: #e7e9fe;
+}
+
+.second_field input {
+    -webkit-box-shadow: 0 0 2cqw 0.1cqw #10012420;
+    background-color: #dce1ff;
+}
+
+.error_txt {
+    padding-left: 2cqw;
+    color: #d93025;
+    font-size: 1cqw;
+    margin: 1cqh 0;
+
+    text-align: left;
+    display: none;
+}
+
+.mail-container {
+    align-items: center;
+    position: absolute;
+    animation: none;
+    display: flex;
+    display: none;
+
+    left: -200px;
+    top: 40%;
+  }
+  
+  .mail {
+    height: auto;
+    width: 80px;
+    z-index: 1;
+  }
+  
+  .wing {
+    position: relative;
+    animation: none;
+    height: auto;
+
+    width: 40px;
+    z-index: 0;
+  }
+  
+  .left-wing {
+    transform-origin: right center;
+    margin-right: -10px;
+  }
+  
+  .right-wing {
+    transform-origin: left center;
+    margin-left: -10px;
+  }
