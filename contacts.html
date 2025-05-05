@@ -29,7 +29,7 @@
             <button class="navbtn" type="button" onclick="location.href='portfolio.html'" >Portfolio</button>
             <button class="navbtn" type="button" onclick="location.href='social.html'" >Social</button>
         </nav>
-        <img class="content_bg navigated" src="Assets/website_placeholder.png" alt="">
+        <img class="content_bg navigated" src="Assets/website_placeholder.png" onerror="this.onerror=null; this.src='assets/error/website_placeholder.webp'" alt="">
         <div class="credits">
             <p>Web Developed By: @Jideeh</p>
         </div>
@@ -75,9 +75,9 @@
                 </div>
 
                 <div class="mail-container">
-                    <img src="assets/1left_wing.png" class="wing left-wing" />
-                    <img src="assets/2mail.png" class="mail" />
-                    <img src="assets/3right_wing.png" class="wing right-wing" />
+                    <img src="assets/1left_wing.png" class="wing left-wing" onerror="this.onerror=null; this.src='assets/Error/1left_wing.webp'" />
+                    <img src="assets/2mail.png" class="mail" onerror="this.onerror=null; this.src='assets/Error/2mail.webp'" />
+                    <img src="assets/3right_wing.png" class="wing right-wing" onerror="this.onerror=null; this.src='assets/Error/3right_wing.webp'" />
                   </div> 
 
                 <button onclick="startFlyAnimation()" type="submit">Send</button>
@@ -85,7 +85,7 @@
         </section>
     </main>
 
-    <<script src="https://smtpjs.com/v3/smtp.js">
+    <script src="https://smtpjs.com/v3/smtp.js">
     </script>
     <script src="script.js"></script>
 </body>
