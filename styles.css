@@ -355,14 +355,15 @@ form {
 
     width: 40px;
     z-index: 0;
+    scale: 0.75;
   }
   
   .left-wing {
     transform-origin: right center;
-    margin-right: -10px;
+    margin-bottom: 1cqh;
   }
   
   .right-wing {
     transform-origin: left center;
-    margin-left: -10px;
+    margin-bottom: 1cqh;
   }

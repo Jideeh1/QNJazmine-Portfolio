@@ -1,5 +1,5 @@
 # QNJazmine Portfolio
-## Website Development
+## Commissioned Website
 * **Version**: 2025.5.5
 * **Status**: In Development
 * **Developers**: [Jideeh1](https://github.com/Jideeh1)
