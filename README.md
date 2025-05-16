@@ -11,4 +11,4 @@ Hey, whatever-Jazmine-calls-her-fans! If you came here to check her portfolio, y
 What I gave is just a preview hosting of its current website.
 
 > [!NOTE]
-> If you want to fork some of my JS functions or use some of the assets in this file, please ask [QNJazmine](https://x.com/QNJazmine) and [Jideeh](https://x.com/jideeh1) Permission!
+> If you want to fork some of my JS functions or use some of the assets in this file, please ask [QNJazmine](https://x.com/QNJazmine) and [Jideeh](https://x.com/jideeh1) for Permission!
