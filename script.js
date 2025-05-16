@@ -63,12 +63,8 @@ function startFlyAnimation() {
   function confirmEmail() {
 
     console.log("Uhh, email?"); //Yes, I still debug using console logs and alerts. Fuck off.
-
-
     if (confirm("Do you want to proceed to email?")) {
         window.location.href = "mailto:qnjazminebusiness@gmail.com";
-
-        
     }
     else {
         console.log('No? Okay.'); //Yes, I still debug using console logs and alerts. Fuck off.
