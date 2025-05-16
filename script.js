@@ -53,25 +53,25 @@ function startFlyAnimation() {
     });
   }
 
-function singlePage(pageUrl) {
-  fetch(pageUrl).then(response => response.text()).then(html => {
-      document.getElementById("single-page-navigation").innerHTML = html;
-    }
-  );
-}
-  
-function confirmEmail() {
-
-  console.log("Uhh, email?"); //Yes, I still debug using console logs and alerts. Fuck off.
-
-
-  if (confirm("Do you want to proceed to email?")) {
-      window.location.href = "mailto:qnjazminebusiness@gmail.com";
-
-      
+  function singlePage(pageUrl) {
+    fetch(pageUrl).then(response => response.text()).then(html => {
+        document.getElementById("single-page-navigation").innerHTML = html;
+      }
+    );
   }
-  else {
-      console.log('No? Okay.'); //Yes, I still debug using console logs and alerts. Fuck off.
+  
+  function confirmEmail() {
+
+    console.log("Uhh, email?"); //Yes, I still debug using console logs and alerts. Fuck off.
+
+
+    if (confirm("Do you want to proceed to email?")) {
+        window.location.href = "mailto:qnjazminebusiness@gmail.com";
+
+        
     }
+    else {
+        console.log('No? Okay.'); //Yes, I still debug using console logs and alerts. Fuck off.
+      }
 }
 
