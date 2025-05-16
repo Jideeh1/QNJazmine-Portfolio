@@ -367,3 +367,7 @@ form {
     transform-origin: left center;
     margin-bottom: 1cqh;
   }
+
+  #single-page-navigation {
+    transition: all .3s ease-in-out;
+  }

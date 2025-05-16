@@ -22,12 +22,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     </head>
 <body>
-    <main>
+    <main id="single-page-navigation">
         <nav>
-            <button class="navbtn" type="button" onclick="location.href='index.html'" >Home</button>
-            <button class="navbtn" type="button" onclick="location.href='contacts.html'" >Contacts</button>
-            <button class="navbtn" type="button" onclick="location.href='portfolio.html'" >Portfolio</button>
-            <button class="navbtn" type="button" onclick="location.href='social.html'" >Social</button>
+            <button class="navbtn" type="button" onclick="singlePage('index.html')" >Home</button>
+            <button class="navbtn" type="button" onclick="singlePage('contacts.html')" >Contacts</button>
+            <button class="navbtn" type="button" onclick="singlePage('portfolio.html')" >Portfolio</button>
+            <button class="navbtn" type="button" onclick="singlePage('social.html')" >Social</button>
         </nav>
         <img class="content_bg" src="Assets/BackgroundSplashart.png" onerror="this.onerror=null; this.src='assets/error/website_placeholder.webp'" alt="">
         <div class="credits">
