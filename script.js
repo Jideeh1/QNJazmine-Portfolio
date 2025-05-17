@@ -54,8 +54,11 @@ function startFlyAnimation() {
   }
 
   function singlePage(pageUrl) {
+    var changeContainer = document.querySelector('.change').innerHTML;
+
     fetch(pageUrl).then(response => response.text()).then(html => {
         document.getElementById("single-page-navigation").innerHTML = html;
+        console.log('Did u change pages?');
       }
     );
   }

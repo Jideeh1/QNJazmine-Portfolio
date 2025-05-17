@@ -17,8 +17,6 @@
 
 
 
-
-
 body {
     background-image: url(Assets/background_layout.png);
     background-repeat: no-repeat;
@@ -311,6 +309,7 @@ form {
         width: 44cqw;
     }
 }
+
 .first_field input {
     -webkit-box-shadow: 0 0 2cqw 0.1cqw #10012420;
     background-color: #e7e9fe;
@@ -340,34 +339,30 @@ form {
 
     left: -200px;
     top: 40%;
-  }
-  
-  .mail {
-    height: auto;
-    width: 80px;
-    z-index: 1;
-  }
-  
-  .wing {
-    position: relative;
-    animation: none;
-    height: auto;
+}
 
-    width: 40px;
-    z-index: 0;
-    scale: 0.75;
-  }
-  
-  .left-wing {
-    transform-origin: right center;
-    margin-bottom: 1cqh;
-  }
-  
-  .right-wing {
-    transform-origin: left center;
-    margin-bottom: 1cqh;
-  }
+.mail {
+height: auto;
+width: 80px;
+z-index: 1;
+}
 
-  #single-page-navigation {
-    transition: all .3s ease-in-out;
-  }
+.wing {
+position: relative;
+animation: none;
+height: auto;
+
+width: 40px;
+z-index: 0;
+scale: 0.75;
+}
+
+.left-wing {
+transform-origin: right center;
+margin-bottom: 1cqh;
+}
+
+.right-wing {
+transform-origin: left center;
+margin-bottom: 1cqh;
+}
