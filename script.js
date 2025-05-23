@@ -53,15 +53,19 @@ function startFlyAnimation() {
     });
   }
 
-  function singlePage(pageUrl) {
-  var changeContainer = document.querySelector('.change');
-  
-    fetch(pageUrl).then(response => response.text()).then(html => {
-        document.getElementById("single-page-navigation").innerHTML = html;
+function singlePage(pageUrl) {
+  fetch(pageUrl)
+    .then(response => response.text())
+    .then(html => {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      const wrapper = doc.querySelector('.change');
+      if (wrapper) {
+        document.getElementById("single-page-navigation").innerHTML = wrapper.outerHTML;
         console.log('Did u change pages?');
       }
-    );
-  }
+    });
+}
   
   function confirmEmail() {
 
@@ -90,8 +94,11 @@ function showBanner() {
   
   setTimeout(() => {
     kofi.onhover = banner.style.opacity = "0";
-    kofi.onhover = banner.style.display = "none";
     kofi.onhover = banner.style.animation = "none";
+
+    setTimeout(() => {
+      kofi.onhover = banner.style.display = "none";
+    }, 1000);
     
   }, 10000);
 
