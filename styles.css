@@ -370,13 +370,15 @@ margin-bottom: 1cqh;
 
 .loader-con {
     background-image: url(Assets/background_layout.png);
+    transform: translate(-50%, -50%);
     background-repeat: no-repeat;
     position: absolute;
-    display: block;
-
-    z-index: 1000;
+    
     height: 100%;
     width: 100%;
+    z-index: 999;
+    left: 50%;
+    top: 50%;
 
     img {
         animation: float 2s ease-in-out infinite;

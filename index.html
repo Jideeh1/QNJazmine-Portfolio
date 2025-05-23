@@ -22,6 +22,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     </head>
 <body>
+
+    <div class="loader-con">
+        <img src="Assets/WebIconTransparent.png" alt="">
+    </div>
+
     <main id="single-page-navigation" class="change">
         <div class="kofi-con">
             <img src="Assets/kofi-banner.png" onmouseover="speechBubble()" onclick="window.open('https://ko-fi.com/qnjazmine', '_blank')" class="kofi-banner">
@@ -49,20 +54,23 @@
         </div>
     </main>
 
-    <div class="loader-con">
-        <img src="Assets/WebIconTransparent.png" alt="">
-    </div>
 
     <!-- Scripts! EXTERNAL JQUERY SUCKS! -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
     <script>
-        console.log("jQuery loaded:", typeof jQuery !== "undefined");
-
-        $(window).on("load", function(){
-            $(".loader-con").fadeOut(1000);
-            console.log("if you don't see it loading, your internet's probably fast.")
-        });
+        gsap.fromTo('.loader-con', 
+            {
+            opacity:1,
+            zIndex: 999
+        },
+            
+            {
+            opacity: 0,
+            duration: 1,
+            zIndex: -1,
+        })
     </script>
 </body>
 </html>
