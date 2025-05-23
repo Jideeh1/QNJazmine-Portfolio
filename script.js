@@ -54,8 +54,8 @@ function startFlyAnimation() {
   }
 
   function singlePage(pageUrl) {
-    var changeContainer = document.querySelector('.change').innerHTML;
-
+  var changeContainer = document.querySelector('.change');
+  
     fetch(pageUrl).then(response => response.text()).then(html => {
         document.getElementById("single-page-navigation").innerHTML = html;
         console.log('Did u change pages?');
@@ -74,3 +74,25 @@ function startFlyAnimation() {
       }
 }
 
+
+function showBanner() {
+  const banner = document.querySelector('.kofi-banner');
+  const kofi = document.querySelector('.kofi');
+
+  console.log(banner + kofi)
+
+  kofi.onhover = banner.style.display = "block"
+
+  setTimeout(() => {
+    kofi.onhover = banner.style.opacity = "1";
+    kofi.onhover = banner.style.animation = "bubbleEnter 1s ease-out";
+  }, 100);
+  
+  setTimeout(() => {
+    kofi.onhover = banner.style.opacity = "0";
+    kofi.onhover = banner.style.display = "none";
+    kofi.onhover = banner.style.animation = "none";
+    
+  }, 10000);
+
+}

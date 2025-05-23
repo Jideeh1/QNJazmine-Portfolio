@@ -35,6 +35,16 @@
         </div>
     </main>
 
+    <!-- Scripts! EXTERNAL JQUERY SUCKS! -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        console.log("jQuery loaded:", typeof jQuery !== "undefined");
+
+        $(window).on("load", function(){
+            $(".loader-con").fadeOut("slow");
+            console.log("if you don't see it loading, your internet's probably fast.")
+        });
+    </script>
 </body>
 </html>

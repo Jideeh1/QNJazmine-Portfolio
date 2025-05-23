@@ -23,8 +23,12 @@
     </head>
 <body>
     <main id="single-page-navigation" class="change">
+        <div class="kofi-con">
+            <img src="Assets/kofi-banner.png" onmouseover="speechBubble()" onclick="window.open('https://ko-fi.com/qnjazmine', '_blank')" class="kofi-banner">
+            <img src="Assets/kofi.png" onmouseover="showBanner()" onclick="window.open('https://ko-fi.com/qnjazmine', '_blank')" class="kofi">
+        </div>
         <nav>
-            <button class="navbtn" type="button" onclick="singlePage('index.html')" >Home</button>
+            <button class="navbtn" type="button" href="#" >Home</button>
             <button class="navbtn" type="button" onclick="singlePage('contacts.html')" >Contacts</button>
             <button class="navbtn" type="button" onclick="singlePage('portfolio.html')" >Portfolio</button>
             <button class="navbtn" type="button" onclick="singlePage('social.html')" >Social</button>
@@ -45,6 +49,20 @@
         </div>
     </main>
 
+    <div class="loader-con">
+        <img src="Assets/WebIconTransparent.png" alt="">
+    </div>
+
+    <!-- Scripts! EXTERNAL JQUERY SUCKS! -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        console.log("jQuery loaded:", typeof jQuery !== "undefined");
+
+        $(window).on("load", function(){
+            $(".loader-con").fadeOut(1000);
+            console.log("if you don't see it loading, your internet's probably fast.")
+        });
+    </script>
 </body>
 </html>
