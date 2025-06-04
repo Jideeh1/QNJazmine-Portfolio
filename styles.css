@@ -425,8 +425,8 @@ margin-bottom: 1cqh;
         display: none;
         width: auto;
         
-        bottom: 0cqw;
-        height: 4cqw;
+        bottom: .5cqw;
+        height: 3.5cqw;
         right: 4cqw;
         opacity: 0;
     }
