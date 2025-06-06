@@ -10,5 +10,13 @@ Hey, whatever-Jazmine-calls-her-fans! If you came here to check her portfolio, y
 
 What I gave is just a preview hosting of its current website.
 
+### Resources Used
+* [Assets (Primary Source)](https://x.com/QNJazmine)
+* [Vanilla-tilt.js](https://micku7zu.github.io/vanilla-tilt.js/)
+* [mdnW Web Docs](https://developer.mozilla.org/en-US/)
+
 > [!NOTE]
-> If you want to fork some of my JS functions or use some of the assets in this file, please ask [QNJazmine](https://x.com/QNJazmine) and [Jideeh](https://x.com/jideeh1) for Permission!
+> If you just want to fork soem JS functions or use  assets from this project, please ask [QNJazmine](https://x.com/QNJazmine) and [Jideeh](https://x.com/jideeh1) for Permission!
+
+## License
+The source code for this fan porject is licensed under the MIT License. click <a href="LICENSE.txt">LICENSE</a> for more details.
